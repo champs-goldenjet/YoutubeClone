@@ -1,0 +1,66 @@
+.videosGridDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .videosGridDiv{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .videosGridDiv{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.videoImageDiv{
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.Thumbnail{
+    width: 100%;
+}
+
+.timestamp{
+    position: absolute;
+    background-color: black;
+    color: white;
+    bottom: 8px;
+    right: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.videoAboutDiv{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 5px;
+}    
+
+.YtProfilePic{
+    width: 36px;
+    border-radius: 25px;
+}
+
+.videoTitle{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 8px;
+}
+
+.vidChannel , .vidInfo {
+    font-size: 11px;
+    color: rgb(96, 96, 96);
+}
+
+.vidChannel{
+    margin-bottom: 5px;
+}
